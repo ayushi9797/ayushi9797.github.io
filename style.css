@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 
-#navbar {
+#nav-menu {
 
     height: 50px;
     right: 1rem;
@@ -13,23 +13,23 @@
     position: fixed;
 }
 
-#navbar ul {
+#nav-menu ul {
     display: flex;
 }
 
-#navbar ul li {
+#nav-menu ul li {
     padding: 0 16px;
     list-style: none;
     background-color: rgb(107, 122, 251);
     border-radius: 20px;
     margin: 0 5px;
 }
-#navbar ul li:hover{
+#nav-menu ul li:hover{
     box-shadow: 2px 2px 6px white;
     background-color: rgba(107, 121, 251, 0.614);
 }
 
-#navbar ul li a {
+#nav-menu ul li a {
     color: rgb(255, 255, 255);
     font-size: 1.8rem;
     text-decoration: none;
@@ -37,7 +37,7 @@
 
 
 
-/* navbar=------------------------ */
+/* nav-menu=------------------------ */
 #home {
     font-family: system-ui, sans-serif;
     height: 100vh;
@@ -76,7 +76,7 @@
     box-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 
-.downbtn {
+#downbtn {
     background-color: #fff;
     font-size: 2rem;
     border: none;
@@ -86,17 +86,17 @@
     margin: 20px auto;
 }
 
-.downbtn:hover {
+#downbtn:hover {
     color: white;
     box-shadow: inset 190px 0 0 0 rgb(91, 179, 243);
 }
 
-.downbtn a {
+#downbtn a {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
-.downbtn a:hover {
+#downbtn a:hover {
     color: rgb(255, 255, 255);
 
 }
