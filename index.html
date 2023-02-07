@@ -4,103 +4,125 @@
 <html lang="en">
 
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <title>Document</title>
-     <link rel="stylesheet" href="style.css">
+     <!-- <link rel="stylesheet" href="style.css" /> -->
      <script src="https://kit.fontawesome.com/b06a377e67.js" crossorigin="anonymous"></script>
-     <link rel="shortcut icon" href="/image/Screenshot 2023-02-02 175843.jpg" type="image/x-icon">
-     <link rel="stylesheet" href="responsiveness.css">
+     <link rel="shortcut icon" href="/image/Screenshot 2023-02-02 175843.jpg" type="image/x-icon" />
+     <link rel="stylesheet" href="responsiveness.css" />
 </head>
 
 <body>
-    
-
      <nav id="nav-menu">
           <ul>
-              <li><a class="nav-link home" href="#home">HOME</a></li>
-              <li><a class="nav-link about" href="#about">ABOUT</a></li>
-              <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
-              <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
-              <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-              <li><a class="nav-link resume" href="#">RESUME</a></li>
+               <li><a class="nav-link home" href="#home">HOME</a></li>
+               <li><a class="nav-link about" href="#about">ABOUT</a></li>
+               <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
+               <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
+               <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
+               <li><a class="nav-link resume" href="#">RESUME</a></li>
           </ul>
-      </nav>
+     </nav>
      <!-- navbar ended --------------------- -->
 
-     <div id="home">
-          <h1 id="user-detail-name">Ayushi Soni</h1>
-          <h2 id="user-detail-intro">Full Stack Web Developer</h2>
-          <img class="home-img" src="" alt="">
-          <button id = "downbtn" class="nav-link resume"><a  href="/image/Ayushi-Soni-Resume.pdf"
-                    download="Ayushi-Soni-Resume"><i class="fa-solid fa-download"></i>Resume</a></button>
-          <div class="nav-link home"><img src="/image/logo.gif" alt=""></div>
 
-     </div>
+
+
+     <section id="home">
+          <img src="./image/2.png" class="home-img" alt="#" />
+          <h1 id="user-detail-name">Ayushi Soni</h1>
+          <h2 id="user-detail-intro">I am Full Stack Web Developer</h2>
+          <button id="downbtn" class="nav-link resume">
+               <a href="/image/Ayushi-Soni-Resume.pdf" download="Ayushi-Soni-Resume"><i
+                         class="fa-solid fa-download"></i>Resume</a>
+          </button>
+          <div class="nav-link home"><img src="/image/logo.gif" alt="" /></div>
+     </section>
+
+
+
      <!-- --------------------------------------------home ends-------------------------------------------- -->
 
-
-
-     <div id="about" class="nav-link about">
-          <h1 class="nav-link about">title</h1>
-          <p class="nav-link about">pragraph</p>
-     </div>
-
-
-
-     <!-- --------------------------------------------about ends-------------------------------------------- -->
-
-
-
-     <div id="skills" class="nav-link skills">
-          
-
-     </div>
-
-
+     <section title="About" id="about" class="about section">
+          <title>About</title>
+          <h1 id="user-detail-name">Ayushi Soni</h1>
+          <h2 id="user-detail-intro">
+               I know HTML, CSS, JAVASCRIPT, NODEJS, EXPRESS.JS, MONGODB, POSTMAN
+          </h2>
+     </section>
 
      <!-- --------------------------------------------about ends-------------------------------------------- -->
 
-
-
-     <div id="projects" class="nav-link projects">
-
-     </div>
-
-
-
-     <!-- --------------------------------------------about ends-------------------------------------------- -->
-
-     <div id="contact" class="nav-link contact">
-          <h1 class="nav-link contact">CONTACT</h1>
-          <h2 : id="contact-phone" class="nav-link contact">Contact Number </h2>
-
-          <h3 id="contact-email" class="nav-link contact">Email Address- soniayushi345@gmail.com</h3>
-          <h4 class="nav-link contact">Address- Jhansi, U.P.</h4>
-          <div class="nav-link contact">
-               <i id="contact-github" class="fa-brands fa-github nav-link contact "></i>
-               <i id="contact-linkedin" class="fa-brands fa-linkedin nav-link contact"></i>
-               <i class="fa-solid fa-envelope "></i>
+     <section id="skills">
+          <div class="skills-card">
+               <img class="skills-card-img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
+                    alt="nodejs.png" />
+               <h5 class="skills-card-name">Node JS</h5>
           </div>
-     </div>
+          <div class="skills-card">
+               <img class="skills-card-img"
+                    src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.edureka.co%2Fblog%2Fexpressjs-tutorial%2F&psig=AOvVaw1Nvd5UopILGcTiRz6_iGyI&ust=1675883715544000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjs-LyPhP0CFQAAAAAdAAAAABAE"
+                    alt="express.png" />
+               <h5 class="skills-card-name">Express JS</h5>
+          </div>
+          <div class="skills-card">
+               <img class="skills-card-img" src="https://www.pngall.com/wp-content/uploads/13/Mongodb-Transparent.png"
+                    alt="mongodb.png" />
+               <h5 class="skills-card-name">Mongo DB</h5>
+          </div>
+     </section>
 
      <!-- --------------------------------------------about ends-------------------------------------------- -->
+
+     <section id="projects" class="nav-link projects">projects</section>
+
+     <!-- --------------------------------------------about ends-------------------------------------------- -->
+
+     <section id="contact">
+          <h1>Contact</h1>
+          <a id="contact-github" href="https://github.com/ayushi9797">GitHub <i id="contact-github"
+                    class="fa-brands fa-github"></i></a>
+
+          <a id="contact-linkedin" href="https://www.linkedin.com/in/ayushi-soni-145b28260/">LinkedIn
+               <i id="contact-linkedin" class="fa-brands fa-linkedin nav-link contact"></i></a>
+          <a id="contact-phone" href="#">Mobile</a>
+          <a id="contact-email" href="soniayushi345@gmail.com">Email Address- soniayushi345@gmail.com
+               <i class="fa-solid fa-envelope"></i></a>
+     </section>
+     <!-- --------------------------------------------about ends-------------------------------------------- -->
+
+
+
+     <section id="resume">
+          <button id="resume-button-1" src="./image/Ayushi-Soni-Resume.pdf">
+               Resume 1
+          </button>
+          <button id="resume-button-2" src="./image/Ayushi-Soni-Resume.pdf">
+               Resume 2
+          </button>
+     </section>
+
+
+     <!-------------------- GitHUB ---------------------->
+
+
+     <section class="react-activity-calendar">
+          <h1>GitHub React-Activity-Calendar</h1>
+          <img id="github-streak-stats"
+               src="https://github-readme-streak-stats.herokuapp.com?user=ayushi9797&theme=holi-theme&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
+               alt="streakstat" />
+          <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ayushi9797"
+               alt="top_languages" />
+          <img id="github-stats-card"
+               src="https://github-readme-stats.vercel.app/api?username=ayushi9797&count_private=true"
+               alt="stat-card" />
+     </section>
 
      <!-- PROJECT_CARD -->
-     <p><img align="left"
-               src="https://github-readme-stats.vercel.app/api/top-langs?username=ayushi9797&show_icons=true&locale=en&layout=compact"
-               alt="ayushi9797" /></p>
-
-     <p>&nbsp;<img align="center"
-               src="https://github-readme-stats.vercel.app/api?username=ayushi9797&show_icons=true&locale=en"
-               alt="ayushi9797" /></p>
-
-     <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=ayushi9797&" alt="ayushi9797" />
-     </p>
-
-
-
+    
 </body>
 
 </html>
