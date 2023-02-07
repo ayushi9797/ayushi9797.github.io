@@ -13,7 +13,7 @@
 </head>
 
 <body>
-     <div id="navbar">
+     <div id="nav-menu">
           <ul>
                <li><a href="#home">Home</a></li>
                <li><a href="#skills">Skills</a></li>
@@ -25,20 +25,21 @@
      <!-- navbar ende --------------------- -->
 
      <div id="home">
-          <h1>Ayushi Soni</h1>
-          <h2>Full Stack Web Developer</h2>
-          <button class="downbtn"><a href="/image/Ayushi-Soni-Resume.pdf" download="Ayushi-Soni-Resume"><i
-                         class="fa-solid fa-download"></i>Resume</a></button>
-          <div><img src="/image/logo.gif" alt=""></div>
+          <h1 id="user-detail-name">Ayushi Soni</h1>
+          <h2 id="user-detail-intro">Full Stack Web Developer</h2>
+          <img class="home-img" src="" alt="">
+          <button id = "downbtn" class="nav-link resume"><a  href="/image/Ayushi-Soni-Resume.pdf"
+                    download="Ayushi-Soni-Resume"><i class="fa-solid fa-download"></i>Resume</a></button>
+          <div class="nav-link home"><img src="/image/logo.gif" alt=""></div>
 
      </div>
      <!-- --------------------------------------------home ends-------------------------------------------- -->
 
 
 
-     <div id="about">
-          <h1></h1>
-          <p></p>
+     <div id="about" class="nav-link about">
+          <h1 class="nav-link about"></h1>
+          <p class="nav-link about"></p>
      </div>
 
 
@@ -47,7 +48,7 @@
 
 
 
-     <div id="skills">
+     <div id="skills" class="nav-link skills">
 
      </div>
 
@@ -57,7 +58,7 @@
 
 
 
-     <div id="project">
+     <div id="projects" class="nav-link projects">
 
      </div>
 
@@ -65,20 +66,35 @@
 
      <!-- --------------------------------------------about ends-------------------------------------------- -->
 
-     <div id="contact">
-          <h1>CONTACT</h1>
-          <h2>Contact Number </h2>
+     <div id="contact" class="nav-link contact">
+          <h1 class="nav-link contact">CONTACT</h1>
+          <h2 : id="contact-phone" class="nav-link contact">Contact Number </h2>
 
-          <h3>Email Address- soniayushi345@gmail.com</h3>
-          <h4>Address- Jhansi, U.P.</h4>
-          <div>
-               <i class="fa-brands fa-github"></i>
-               <i class="fa-brands fa-linkedin"></i>
-               <i class="fa-solid fa-envelope"></i>
+          <h3 id="contact-email" class="nav-link contact">Email Address- soniayushi345@gmail.com</h3>
+          <h4 class="nav-link contact">Address- Jhansi, U.P.</h4>
+          <div class="nav-link contact">
+               <i id="contact-github" class="fa-brands fa-github nav-link contact "></i>
+               <i id="contact-linkedin" class="fa-brands fa-linkedin nav-link contact"></i>
+               <i class="fa-solid fa-envelope "></i>
           </div>
      </div>
 
      <!-- --------------------------------------------about ends-------------------------------------------- -->
+
+     <!-- PROJECT_CARD -->
+     <p><img align="left"
+               src="https://github-readme-stats.vercel.app/api/top-langs?username=ayushi9797&show_icons=true&locale=en&layout=compact"
+               alt="ayushi9797" /></p>
+
+     <p>&nbsp;<img align="center"
+               src="https://github-readme-stats.vercel.app/api?username=ayushi9797&show_icons=true&locale=en"
+               alt="ayushi9797" /></p>
+
+     <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=ayushi9797&" alt="ayushi9797" />
+     </p>
+
+
+
 </body>
 
 </html>
