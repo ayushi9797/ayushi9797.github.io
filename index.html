@@ -2,61 +2,97 @@
 <html lang="en">
 
 <head>
-     <meta charset="UTF-8" />
-     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>HOME PAGE</title>
-     <!-- <link rel="stylesheet" href="./style/index.css" /> -->
-     <link rel="stylesheet" href="index.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOME PAGE</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-     <nav id="nav-menu">
-          <ul>
-               <li class='logo'><img src='./image/Black_and_White_Circle_Modern_Photographer_Logo-removebg-preview.png'/></li>
-               
-               <input type='checkbox' id='check' />
-            <span class="menu">
-               <li><a class="nav-link home" href="#home">HOME</a></li>
-               <li><a class="nav-link about" href="#about">ABOUT</a></li>
-               <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
-               <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
-               <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-               <li><a class="nav-link resume" href="#"></a></li>
-               <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-          </span>
-          <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-          </ul>
-     </nav>
+  <nav id="nav-menu">
+    <ul>
+      <img src="./image/Black_and_White_Circle_Modern_Photographer_Logo-removebg-preview.png" />
 
+      <input type="checkbox" id="check" />
+      <span class="menu">
+        <li><a class="nav-link home" href="#home">HOME</a></li>
+        <li><a class="nav-link about" href="#about">ABOUT</a></li>
+        <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
+        <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
+        <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
+        <li><a class="nav-link resume" href="#"></a></li>
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+      </span>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </ul>
+  </nav>
 
+  <!-- ------------------ HOME -------------------- -->
 
-     <!-------------------- HOME ---------------------->
-     <section id="home">
-          <div>
-          <img src="./image/2.png" class="home-img" alt="#" />
-     </div>
-          <h1 id="user-detail-name">Ayushi Soni</h1>
-          <h2 id="user-detail-intro">I am Full Stack Web Developer </h2>
-     </section>
+  <section id="home">
+    <div id="particles-js"></div>
 
+    <div class="content">
+      <h2 id="user-detail-name">
+        Hey there
+        <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px " />
+        I'm <a href="">AYUSHI SONI</a>
+      </h2>
 
+      <p id="user-detail-intro">
+        I am Full Stack Web Developer <span class="typing-text"></span>
+      </p>
+      <img style="text-align: center"
+        src="https://readme-typing-svg.herokuapp.com/?lines=Passionate%20Coder;Self%20taught%20Programmer&center=true&width=500&height=50" />
 
-     <!-------------------- ABOUT ---------------------->
-     <!-- <section title="About" id="about" class="about section">
-          <title>About</title>
-          <h1 id="user-detail-name">Ayushi Soni</h1>
-          <h2 id="user-detail-intro">My techs HTML, CSS, JAVASCRIPT, NODEJS, EXPRESS.JS, MONGODB</h2>
-     </section> -->
+      <a href="#about" class="btn"><span>About Me</span>
+        <i class="fas fa-arrow-circle-down"></i>
+      </a>
 
+      <div class="socials">
+        <ul class="social-icons" style="display: inline-block; background-color: white">
+          <li>
+            <a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/ayushi-soni-145b28260/"
+              target="_blank"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a class="github" aria-label="GitHub" href="https://github.com/ayushi9797" target="_blank"><i
+                class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a class="twitter" aria-label="Twitter" href="https://twitter.com/soniayushi345" target="_blank"><i
+                class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a class="instagram" aria-label="Instagram"
+              href="https://www.instagram.com/soniayushi345/?igshid=YmMyMTA2M2Y%3D"><i class="fab fa-instagram"
+                target="_blank"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="image">
+      <img style="width: 60%" draggable="false" class="home-img" src="./image/2.png" alt="#" />
+    </div>
+  </section>
 
+  <!-------------------- ABOUT ---------------------->
 
-     <!-------------------- SKILLS ---------------------->
+  <section title="About" id="about" class="about section">
+    <title>About</title>
+    <h1 id="user-detail-name">Ayushi</h1>
+    <h2 id="user-detail-intro">
+      My techs HTML, CSS, JAVASCRIPT, NODEJS, EXPRESS, MONGODB
+    </h2>
+  </section>
 
+  <!-------------------- SKILLS ---------------------->
 
-     <!-- <section id="skills">
+  <section id="skills">
           <div class="skills-card">
                <img class="skills-card-img"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
@@ -74,38 +110,85 @@
                     alt="mongodb.png" />
                <h5 class="skills-card-name">Mongo DB</h5>
           </div>
-     </section> -->
+     </section>
+
+  <!-------------------- PROJECTS ---------------------->
+  <section id="projects">Projects
+
+    <div class="project-card">
+        <img src="./image/myntra.png" alt="">
+        <title class="project-title">Cine Maniac</title>
+        <p class="project-description">Clone of myntra Fauget Fashion is a one shop for all your fashion and lifestyle India's ecommerce store for fashion and lifestyle products.. .</p>
+        <h3 class="project-tech-stack"> HTML |CSS| JavaScript |Node JS | Express | MongoDB | Postman |</h3>
+        <p class="project-github-link">Github link <a
+                href="https://github.com/ayushi9797/Fauget_fashion.git"></a></p>
+        <p class="project-deployed-link"> Deployed link<a
+                href="https://lively-blini-b17740.netlify.app/"></a></p>
+    </div>
+
+    <div class="project-card">
+      <img src="./image/myntra.png" alt="">
+      <title class="project-title">Cine Maniac</title>
+      <p class="project-description">Clone of myntra Fauget Fashion is a one shop for all your fashion and lifestyle India's ecommerce store for fashion and lifestyle products.. .</p>
+      <h3 class="project-tech-stack"> HTML |CSS| JavaScript |Node JS | Express | MongoDB | Postman |</h3>
+      <p class="project-github-link">Github link <a
+              href="https://github.com/ayushi9797/Fauget_fashion.git"></a></p>
+      <p class="project-deployed-link"> Deployed link<a
+              href="https://lively-blini-b17740.netlify.app/"></a></p>
+  </div>
 
 
+  <div class="project-card">
+    <img src="./image/myntra.png" alt="">
+    <title class="project-title">Cine Maniac</title>
+    <p class="project-description">Clone of myntra Fauget Fashion is a one shop for all your fashion and lifestyle India's ecommerce store for fashion and lifestyle products.. .</p>
+    <h3 class="project-tech-stack"> HTML |CSS| JavaScript |Node JS | Express | MongoDB | Postman |</h3>
+    <p class="project-github-link">Github link <a
+            href="https://github.com/ayushi9797/Fauget_fashion.git"></a></p>
+    <p class="project-deployed-link"> Deployed link<a
+            href="https://lively-blini-b17740.netlify.app/"></a></p>
+</div>
+    
 
-     <!-------------------- PROJECTS ---------------------->
-     <!-- <section id="projects">Projects</section> -->
+<div class="project-card">
+  <img src="./image/myntra.png" alt="">
+  <title class="project-title">Cine Maniac</title>
+  <p class="project-description">Clone of myntra Fauget Fashion is a one shop for all your fashion and lifestyle India's ecommerce store for fashion and lifestyle products.. .</p>
+  <h3 class="project-tech-stack"> HTML |CSS| JavaScript |Node JS | Express | MongoDB | Postman |</h3>
+  <p class="project-github-link">Github link <a
+          href="https://github.com/ayushi9797/Fauget_fashion.git"></a></p>
+  <p class="project-deployed-link"> Deployed link<a
+          href="https://lively-blini-b17740.netlify.app/"></a></p>
+</div>
 
+</section>
 
+  <!-- <section id="projects">Projects</section> -->
 
-     <!-------------------- CONTACTS ---------------------->
-     <!-- <section id="contact">
+  <!-------------------- CONTACTS ---------------------->
+
+   <section id="contact">
           <h1>Contact</h1>
           <a id="contact-github" href="https://github.com/ayushi9797">GitHub</a>
           <a id="contact-linkedin" href="https://www.linkedin.com/in/ayushi-soni-145b28260/">LinkedIn</a>
           <a id="contact-phone" href="#">Mobile</a>
           <a id="contact-email" href="soniayushi345@gmail.com">Email</a>
      </section>
- -->
+ 
 
+  <!-------------------- RESUME ---------------------->
 
-     <!-------------------- RESUME ---------------------->
-     <!-- <section id="resume">
+   <section id="resume">
           <button id="resume-button-1" src="">Resume 1
                
           </button>
           <button id="resume-button-2" src="">Resume 2</button>
      </section>
- -->
+ 
 
-     <!-------------------- GitHUB ---------------------->
-     
-     <!-- <section class="react-activity-calendar">
+  <!-------------------- GitHUB ---------------------->
+
+   <section class="react-activity-calendar">
           <h1>GitHub React-Activity-Calendar</h1>
           <img id="github-streak-stats"
                src="https://github-readme-streak-stats.herokuapp.com?user=ayushi9797&theme=holi-theme&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
@@ -115,7 +198,10 @@
           <img id="github-stats-card"
                src="https://github-readme-stats.vercel.app/api?username=ayushi9797&count_private=true"
                alt="stat-card" />
-     </section> -->
+     </section> 
+
+  <div class="footer"></div>
 </body>
 
 </html>
+<script src="./src/index.js" type="module"></script>
