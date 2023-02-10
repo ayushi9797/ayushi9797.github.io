@@ -2,250 +2,154 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HOME PAGE</title>
-  <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="" />
 </head>
 
 <body>
-  <nav id="nav-menu">
-    <ul>
-      <img src="./image/Black_and_White_Circle_Modern_Photographer_Logo-removebg-preview.png" />
-
-      <input type="checkbox" id="check" />
-      <span class="menu">
-        <li><a class="nav-link home" href="#home">HOME</a></li>
-        <li><a class="nav-link about" href="#about">ABOUT</a></li>
-        <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
-        <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
-        <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-        <li><a class="nav-link resume" href="#resume"></a></li>
-        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-      </span>
-      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-    </ul>
-  </nav>
-
-  <!-- ------------------ HOME -------------------- -->
-
-  <section id="home">
-    <div id="particles-js"></div>
-
-    <div class="content">
-      <h2 id="user-detail-name">
-        Hey there
-        <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px " />
-        I'm <a href="">AYUSHI SONI</a>
-      </h2>
-
-      <p id="user-detail-intro">
-        I am Full Stack Web Developer <span class="typing-text"></span>
-      </p>
-      <img style="text-align: center"
-        src="https://readme-typing-svg.herokuapp.com/?lines=Passionate%20Coder;Self%20taught%20Programmer&center=true&width=500&height=50" />
-
-      <a href="#about" class="btn"><span>About Me</span>
-        <i class="fas fa-arrow-circle-down"></i>
-      </a>
-
-      <div class="socials">
-        <ul class="social-icons" style="display: inline-block; background-color: white">
-          <li>
-            <a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/ayushi-soni-145b28260/"
-              target="_blank"><i class="fab fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a class="github" aria-label="GitHub" href="https://github.com/ayushi9797" target="_blank"><i
-                class="fab fa-github"></i></a>
-          </li>
-          <li>
-            <a class="twitter" aria-label="Twitter" href="https://twitter.com/soniayushi345" target="_blank"><i
-                class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a class="instagram" aria-label="Instagram"
-              href="https://www.instagram.com/soniayushi345/?igshid=YmMyMTA2M2Y%3D"><i class="fab fa-instagram"
-                target="_blank"></i></a>
-          </li>
+    <nav id="nav-menu">
+        <ul>
+            <li><a class="nav-link home" href="#home">HOME</a></li>
+            <li><a class="nav-link about" href="#about">ABOUT</a></li>
+            <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
+            <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
+            <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
+            <li><a class="nav-link resume" href="#"></a></li>
         </ul>
+    </nav>
+
+
+
+    <!-------------------- HOME ---------------------->
+    <section id="home">
+        <img src="./image/2.png" class="home-img" alt="#" />
+        <h1 id="user-detail-name">Ayushi Soni</h1>
+        <h2 id="user-detail-intro">I am Full Stack Web Developer </h2>
+    </section>
+
+
+
+    <!-------------------- ABOUT ---------------------->
+    <section title="About" id="about" class="about section">
+        <title>About</title>
+        <h1 id="user-detail-name">Ayushi Soni</h1>
+        <h2 id="user-detail-intro">I am a Developer who knows HTML, CSS, JAVASCRIPT, NODEJS, EXPRESS.JS, MONGODB,
+            POSTMAN</h2>
+    </section>
+
+
+
+    <!-------------------- SKILLS ---------------------->
+    <section id="skills">
+        <div class="skills-card">
+            <img class="skills-card-img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
+                alt="nodejs.png" />
+            <h5 class="skills-card-name">Node JS</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img"
+                src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.edureka.co%2Fblog%2Fexpressjs-tutorial%2F&psig=AOvVaw1Nvd5UopILGcTiRz6_iGyI&ust=1675883715544000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjs-LyPhP0CFQAAAAAdAAAAABAE"
+                alt="express.png" />
+            <h5 class="skills-card-name">Express JS</h5>
+        </div>
+        <div class="skills-card">
+            <img class="skills-card-img" src="https://www.pngall.com/wp-content/uploads/13/Mongodb-Transparent.png"
+                alt="mongodb.png" />
+            <h5 class="skills-card-name">Mongo DB</h5>
+        </div>
+    </section>
+
+
+
+    <!-------------------- PROJECTS ---------------------->
+    <section id="projects">Projects
+        
+        <div class="project-card">
+            <img src="./image/myntra.png" alt="">
+            <title class="project-title">Myntra</title>
+            <p class="project-description">Clone of 
+                </p>
+            <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
+            <p class="project-github-link">Github link <a
+                    href="https://github.com/ayushi9797/wiry-measure-2833"></a></p>
+            <p class="project-deployed-link"> Deployed link<a
+                    href="https://lively-blini-b17740.netlify.app/"></a></p>
+        </div>
+
+        <div class="project-card">
+          <img src="./image/myntra.png" alt="">
+          <title class="project-title">Myntra</title>
+          <p class="project-description">Clone of 
+              </p>
+          <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
+          <p class="project-github-link">Github link <a
+                  href="https://github.com/ayushi9797/wiry-measure-2833"></a></p>
+          <p class="project-deployed-link"> Deployed link<a
+                  href="https://lively-blini-b17740.netlify.app/"></a></p>
       </div>
-    </div>
-    <div class="image">
-      <img style="width: 60%" draggable="false" class="home-img" src="./image/2.png" alt="#" />
-    </div>
-  </section>
+      
 
-  <!-------------------- ABOUT ---------------------->
-
-  <!-- <section title="About" id="about" class="about section">
-    <title>About</title>
-    <h1 id="user-detail-name">Ayushi</h1>
-    <h2 id="user-detail-intro">
-      My techs HTML, CSS, JAVASCRIPT, NODEJS, EXPRESS, MONGODB
-    </h2>
-  </section> -->
-
-  <!-------------------- ABOUT ---------------------->
-    
-  
-
-    <section class="about section" id="about">
-      <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-
-      <div class="row">
-
-          <div class="image">
-              <img draggable="false" class="tilt" src="./image/2.png" alt="">
-          </div>
-
-          <div class="content">
-              <h3 id="user-detail-name">I'm Ayushi</h3>
-              <span class="tag">Full Stack Web Developer</span>
-
-              <p id="user-detail-intro">I am a Full-Stack developer based in Uttar Pradesh.
-                  I am very passionate about improving my coding skills & developing applications & websites.
-                  I build WebApps and Websites using HTML CSS JavaScript.
-                  Working for myself to improve my skills.
-                  Love to build Full-Stack clones. </p>
-
-              <div class="box-container">
-                  <div class="box">
-
-                      <p><span> phone : </span> +91</p>
-                  </div>
-                  <div class="box">
-                      <p><span> email : </span> soniayushi345@gmail.com</p>
-                      <p><span> place : </span> Uttar Pradesh</p>
-                  </div>
-              </div>
-
-              <div class="resumebtn">
-                  <a href="#" class="btn"><span>Resume</span>
-                      <i class="fas fa-chevron-right"></i>
-                  </a>
-              </div>
-
-          </div>
-      </div>
-  </section>
-  <!-- about section ends -->
-
-  <!-------------------- SKILLS ---------------------->
-
-  <section id="skills">
-          <div class="skills-card">
-               <img class="skills-card-img"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
-                    alt="nodejs.png" />
-               <h5 class="skills-card-name">Node JS</h5>
-          </div>
-          <div class="skills-card">
-               <img class="skills-card-img"
-                    src="" />
-               <h5 class="skills-card-name"></h5>
-          </div>
-          <div class="skills-card">
-               <img class="skills-card-img" src="https://www.pngall.com/wp-content/uploads/13/Mongodb-Transparent.png"
-                    alt="mongodb.png" />
-               <h5 class="skills-card-name">Mongo DB</h5>
-          </div>
-     </section>
-
-  <!-------------------- PROJECTS ---------------------->
-  <section id="projects">Projects
-
-    <div class="project-card">
+      <div class="project-card">
         <img src="./image/myntra.png" alt="">
-        <title class="project-title">Cine Maniac</title>
-        <p class="project-description">Clone of myntra Fauget Fashion is a one shop for all your fashion and lifestyle India's ecommerce store for fashion and lifestyle products.. .</p>
-        <h3 class="project-tech-stack"> HTML |CSS| JavaScript |Node JS | Express | MongoDB | Postman |</h3>
+        <title class="project-title">Myntra</title>
+        <p class="project-description">Clone of 
+            </p>
+        <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
         <p class="project-github-link">Github link <a
-                href="https://github.com/ayushi9797/Fauget_fashion.git"></a></p>
+                href="https://github.com/ayushi9797/wiry-measure-2833"></a></p>
         <p class="project-deployed-link"> Deployed link<a
                 href="https://lively-blini-b17740.netlify.app/"></a></p>
     </div>
 
+
     <div class="project-card">
       <img src="./image/myntra.png" alt="">
-      <title class="project-title">Cine Maniac</title>
-      <p class="project-description">Clone of myntra Fauget Fashion is a one shop for all your fashion and lifestyle India's ecommerce store for fashion and lifestyle products.. .</p>
-      <h3 class="project-tech-stack"> HTML |CSS| JavaScript |Node JS | Express | MongoDB | Postman |</h3>
+      <title class="project-title">Myntra</title>
+      <p class="project-description">Clone of 
+          </p>
+      <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
       <p class="project-github-link">Github link <a
-              href="https://github.com/ayushi9797/Fauget_fashion.git"></a></p>
+              href="https://github.com/ayushi9797/wiry-measure-2833"></a></p>
       <p class="project-deployed-link"> Deployed link<a
               href="https://lively-blini-b17740.netlify.app/"></a></p>
   </div>
+    </section>
 
 
-  <div class="project-card">
-    <img src="./image/myntra.png" alt="">
-    <title class="project-title">Cine Maniac</title>
-    <p class="project-description">Clone of myntra Fauget Fashion is a one shop for all your fashion and lifestyle India's ecommerce store for fashion and lifestyle products.. .</p>
-    <h3 class="project-tech-stack"> HTML |CSS| JavaScript |Node JS | Express | MongoDB | Postman |</h3>
-    <p class="project-github-link">Github link <a
-            href="https://github.com/ayushi9797/Fauget_fashion.git"></a></p>
-    <p class="project-deployed-link"> Deployed link<a
-            href="https://lively-blini-b17740.netlify.app/"></a></p>
-</div>
-    
 
-<div class="project-card">
-  <img src="./image/myntra.png" alt="">
-  <title class="project-title">Cine Maniac</title>
-  <p class="project-description">Clone of myntra Fauget Fashion is a one shop for all your fashion and lifestyle India's ecommerce store for fashion and lifestyle products.. .</p>
-  <h3 class="project-tech-stack"> HTML |CSS| JavaScript |Node JS | Express | MongoDB | Postman |</h3>
-  <p class="project-github-link">Github link <a
-          href="https://github.com/ayushi9797/Fauget_fashion.git"></a></p>
-  <p class="project-deployed-link"> Deployed link<a
-          href="https://lively-blini-b17740.netlify.app/"></a></p>
-</div>
+    <!-------------------- CONTACTS ---------------------->
+    <section id="contact">
+        <h1>Contact</h1>
+        <a id="contact-github" href="https://github.com/ayushi9797">GitHub</a>
+        <a id="contact-linkedin" href="https://www.linkedin.com/in/ayushi-soni-145b28260/">LinkedIn</a>
+        <a id="contact-phone" href="#">Mobile</a>
+        <a id="contact-email" href="soniayushi345@gmail.com">Email</a>
+    </section>
 
-</section>
 
-  <!-- <section id="projects">Projects</section> -->
 
-  <!-------------------- CONTACTS ---------------------->
+    <!-------------------- RESUME ---------------------->
+    <section id="resume">
+        <button id="resume-button-1" src="">Resume 1</button>
+        <button id="resume-button-2" src="">Resume 2</button>
+    </section>
 
-   <section id="contact">
-          <h1>Contact</h1>
-          <a id="contact-github" href="https://github.com/ayushi9797">GitHub</a>
-          <a id="contact-linkedin" href="https://www.linkedin.com/in/ayushi-soni-145b28260/">LinkedIn</a>
-          <a id="contact-phone" href="#">Mobile</a>
-          <a id="contact-email" href="soniayushi345@gmail.com">Email</a>
-     </section>
- 
 
-  <!-------------------- RESUME ---------------------->
-
-   <section id="resume">
-          <button id="resume-button-1" src="">Resume 1
-               
-          </button>
-          <button id="resume-button-2" src="">Resume 2</button>
-     </section>
- 
-
-  <!-------------------- GitHUB ---------------------->
-
-   <section class="react-activity-calendar">
-          <h1>GitHub React-Activity-Calendar</h1>
-          <img id="github-streak-stats"
-               src="https://github-readme-streak-stats.herokuapp.com?user=ayushi9797&theme=holi-theme&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
-               alt="streakstat" />
-          <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ayushi9797"
-               alt="top_languages" />
-          <img id="github-stats-card"
-               src="https://github-readme-stats.vercel.app/api?username=ayushi9797&count_private=true"
-               alt="stat-card" />
-     </section> 
-
-  <div class="footer"></div>
+    <!-------------------- GitHUB ---------------------->
+    <section class="react-activity-calendar">
+        <h1>GitHub React-Activity-Calendar</h1>
+        <img id="github-streak-stats"
+            src="https://github-readme-streak-stats.herokuapp.com?user=ayushi9797&theme=holi-theme&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
+            alt="streakstat" />
+        <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ayushi9797"
+            alt="top_languages" />
+        <img id="github-stats-card"
+            src="https://github-readme-stats.vercel.app/api?username=ayushi9797&count_private=true" alt="stat-card" />
+    </section>
 </body>
 
 </html>
-<script src="./src/index.js" type="module"></script>

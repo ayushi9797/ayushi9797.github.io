@@ -9,6 +9,47 @@ body {
     --color1: #FFF ;
     --color2: #181818 ;
 }
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap"); */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+} */
+/* body {
+  background: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection {
+  background: #2b3dda;
+  color: #fff;
+} */
+
+/* html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: rgb(235, 202, 245);
+}
+html::-webkit-scrollbar-thumb {
+  background: hotpink;
+} */
 
 
 /* navbar */
@@ -145,18 +186,20 @@ ul{
   #home .content #user-detail-name {
     font-size: 4rem;
     font-weight: 800;
-    color: #cb123d;
+    color:rgb(227, 33, 66);
   }
   #home .content #user-detail-name span {
     font-size: 1rem;
     font-weight: 800;
-    color: #9428ec;
+    color: rgb(244, 88, 114);
   }
   #home .content #user-detail-intro {
-    font-size: 2rem;
-    color: #000;
+    font-style: italic;
+    font-size: 2.5rem;
+    color:brown;
     font-weight: 600;
     padding: 1rem 0;
+    
   }
   #home .content #user-detail-intro span {
     font-size: 2.5rem;
@@ -168,11 +211,11 @@ ul{
     margin-top: 1rem;
     position: absolute;
     line-height: 0;
-    padding: 1.6rem 3rem;
+    padding: 1.9rem 4rem;
     border-radius: 4em;
     transition: 0.5s;
     color: #fff;
-    background: #2506ad;
+    background: #6443f8;
     box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
     font-family: "Nunito", sans-serif;
   }
@@ -276,7 +319,7 @@ ul{
 /* about section starts */
 
 .heading {
-    font-size: 3.5rem;
+    font-size: 2rem;
     color:rgb(246, 57, 88);
     font-weight: 800;
     text-align: center;
@@ -328,7 +371,7 @@ ul{
   }
   #about .row .content .tag {
     font-size: 1.4rem;
-    color: rgb(139, 139, 238);
+    color: rgb(236, 127, 127);
     font-weight: 600;
     margin-top: 1rem;
   }
@@ -339,7 +382,7 @@ ul{
     font-family: "Nunito";
     font-weight: 600;
     text-transform: none;
-    color: rgb(12, 185, 12);
+    color: rgb(139, 139, 238);
     font-size: 20px;
   }
   #about .row .content .box-container {
@@ -352,12 +395,12 @@ ul{
   #about .row .content .box-container .box p {
     text-transform: none;
     color: rgb(21, 20, 20);
-    font-size: 16px;
+    font-size: 20px;
     
   }
   #about .row .content .box-container .box p span {
     color: rgb(240, 92, 117);
-    font-size: 20px;
+    font-size: 25px;
   }
   .resumebtn {
     margin-top: 6rem;
