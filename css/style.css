@@ -8,8 +8,8 @@
 body {
   font-family: "Poppins", sans-serif;
   --color1: #fff;
-  --color2: #af0171;
-  background-color: #111;
+  --color2: #c91b8c;
+  /* background-color: #111; */
 }
 
 /* navbar */
@@ -146,6 +146,7 @@ ul {
   margin: 1% 4%;
   border-radius: 50%;
   transition: transform 0.6s;
+  box-shadow: 2px 2px 10px rgb(116, 243, 243), -2px -2px 10px rgb(248, 94, 120);
 }
 
 #home > img:hover {
