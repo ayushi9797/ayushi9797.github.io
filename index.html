@@ -2,154 +2,121 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME PAGE</title>
-    <link rel="stylesheet" href="" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+   
+</head>
+
+<title> Portfolio === Ayushi</title>
+<style>
+
+
+</style>
 </head>
 
 <body>
-    <nav id="nav-menu">
-        <ul>
-            <li><a class="nav-link home" href="#home">HOME</a></li>
-            <li><a class="nav-link about" href="#about">ABOUT</a></li>
-            <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
-            <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
-            <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-            <li><a class="nav-link resume" href="#"></a></li>
-        </ul>
-    </nav>
 
+  <!-- =================================================== NAVBAR ======================================================================== -->
 
+  <nav id="nav-menu">
+    <ul>
+      <img src="./image/logoo.png.jpeg" />
 
-    <!-------------------- HOME ---------------------->
-    <section id="home">
-        <img src="./image/2.png" class="home-img" alt="#" />
-        <h1 id="user-detail-name">Ayushi Soni</h1>
-        <h2 id="user-detail-intro">I am Full Stack Web Developer </h2>
-    </section>
+      <input type="checkbox" id="check" />
+      <span class="menu">
+        <li><a class="nav-link home" href="#home">HOME</a></li>
+        <li><a class="nav-link about" href="#about">ABOUT</a></li>
+        <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
+        <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
+        <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
+        <li><a href="./image/Ayushi-Soni-Resume.pdf" class="nav-link resume" id="resume-button-1" download>Resume <i
+              class="fa fa-download"></i></a></li>
+              <li><button class="toggle">Dark</button></li>
+        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+      </span>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </ul>
+  </nav>
 
+  <!-- ========================================   HOME  ============================================================================== -->
 
+  
 
-    <!-------------------- ABOUT ---------------------->
-    <section title="About" id="about" class="about section">
-        <title>About</title>
-        <h1 id="user-detail-name">Ayushi Soni</h1>
-        <h2 id="user-detail-intro">I am a Developer who knows HTML, CSS, JAVASCRIPT, NODEJS, EXPRESS.JS, MONGODB,
-            POSTMAN</h2>
-    </section>
-
-
-
-    <!-------------------- SKILLS ---------------------->
-    <section id="skills">
-        <div class="skills-card">
-            <img class="skills-card-img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
-                alt="nodejs.png" />
-            <h5 class="skills-card-name">Node JS</h5>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img"
-                src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.edureka.co%2Fblog%2Fexpressjs-tutorial%2F&psig=AOvVaw1Nvd5UopILGcTiRz6_iGyI&ust=1675883715544000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjs-LyPhP0CFQAAAAAdAAAAABAE"
-                alt="express.png" />
-            <h5 class="skills-card-name">Express JS</h5>
-        </div>
-        <div class="skills-card">
-            <img class="skills-card-img" src="https://www.pngall.com/wp-content/uploads/13/Mongodb-Transparent.png"
-                alt="mongodb.png" />
-            <h5 class="skills-card-name">Mongo DB</h5>
-        </div>
-    </section>
-
-
-
-    <!-------------------- PROJECTS ---------------------->
-    <section id="projects">Projects
-        
-        <div class="project-card">
-            <img src="./image/myntra.png" alt="">
-            <title class="project-title">Myntra</title>
-            <p class="project-description">Clone of 
-                </p>
-            <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
-            <p class="project-github-link">Github link <a
-                    href="https://github.com/ayushi9797/wiry-measure-2833"></a></p>
-            <p class="project-deployed-link"> Deployed link<a
-                    href="https://lively-blini-b17740.netlify.app/"></a></p>
-        </div>
-
-        <div class="project-card">
-          <img src="./image/myntra.png" alt="">
-          <title class="project-title">Myntra</title>
-          <p class="project-description">Clone of 
-              </p>
-          <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
-          <p class="project-github-link">Github link <a
-                  href="https://github.com/ayushi9797/wiry-measure-2833"></a></p>
-          <p class="project-deployed-link"> Deployed link<a
-                  href="https://lively-blini-b17740.netlify.app/"></a></p>
-      </div>
-      
-
-      <div class="project-card">
-        <img src="./image/myntra.png" alt="">
-        <title class="project-title">Myntra</title>
-        <p class="project-description">Clone of 
-            </p>
-        <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
-        <p class="project-github-link">Github link <a
-                href="https://github.com/ayushi9797/wiry-measure-2833"></a></p>
-        <p class="project-deployed-link"> Deployed link<a
-                href="https://lively-blini-b17740.netlify.app/"></a></p>
-    </div>
-
-
-    <div class="project-card">
-      <img src="./image/myntra.png" alt="">
-      <title class="project-title">Myntra</title>
-      <p class="project-description">Clone of 
-          </p>
-      <h3 class="project-tech-stack">Html|CSS|JavaScript</h3>
-      <p class="project-github-link">Github link <a
-              href="https://github.com/ayushi9797/wiry-measure-2833"></a></p>
-      <p class="project-deployed-link"> Deployed link<a
-              href="https://lively-blini-b17740.netlify.app/"></a></p>
+<div id="home">
+  
+  <div>
+      <h1 class="heading">👋 Hello, my name is </h1>
+      <p id="user-detail-name">Ayushi Soni</p>
+      <h1 id="demo"><span> I'm a </span>
+        <span id="demo1"></span> </h1>
   </div>
-    </section>
+  
+  
+
+  <img class="home-img" src="./image/2.png" alt="">
+
+</div>
+<!-- <div> <img style="margin-top:30%;" alt="Coding" width="300"
+  src="https://storage.googleapis.com/media.helloumi.com/125042/channels/FJ3DZITWCY268043HGFACIP9CFUA9XM6.gif" />
+</div> -->
 
 
 
-    <!-------------------- CONTACTS ---------------------->
-    <section id="contact">
-        <h1>Contact</h1>
-        <a id="contact-github" href="https://github.com/ayushi9797">GitHub</a>
-        <a id="contact-linkedin" href="https://www.linkedin.com/in/ayushi-soni-145b28260/">LinkedIn</a>
-        <a id="contact-phone" href="#">Mobile</a>
-        <a id="contact-email" href="soniayushi345@gmail.com">Email</a>
-    </section>
+<!-- ============================================ ABOUT ================================================================================== -->
+<section class="about" id="about" class="about section" >
+  <h2 style="text-align: center; margin-top: 10px;color: rgb(188, 74, 74); font-size: 60px;" class="heading"><i  class="fas fa-user-alt"></i>
+      About <span>Me</span></h2>
+  <div class="max-width">
+     
+      <div class="about-content">
+              <img src="./image/2.png" alt="">
+          <div class="column right">
+              <div class="text" id="user-detail-name" style="margin-top: 6%;">I'm Ayushi  Soni and I'm a <span class="typing-2"></span></div>
+              <p id="user-detail-intro">Enthusiastic about learning and expressing new technology. An
+                  aspiring node developer with 1200+ hours of practical experience
+                  in coding and building numerous websites have solved 700+ DSA
+                  questions. strong ambition to work as a backend node developer
+                  to produce useful solutions..</p>
+              <a href="./image/Ayushi-Soni-Resume.pdf"> My Resume</a>
+          </div>
+      </div>
+  </div>
+</section>
 
 
 
-    <!-------------------- RESUME ---------------------->
-    <section id="resume">
-        <button id="resume-button-1" src="">Resume 1</button>
-        <button id="resume-button-2" src="">Resume 2</button>
-    </section>
+<!-- ============================================ SKILLS ===================================================================================== -->
+<section class="skills" id="skills">
+  <h3 style="text-align: center; margin-top: 20px;color:rgb(246, 33, 69); font-size: 50px;" class="heading"><i  class="fas fa-user-alt"></i>
+    Skills <span></span></h2>
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+  <div class="container">
+      <div class="row" id="skills-card">
+
+          <!-- <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
+              <span>AdobeXD</span>
+            </div>
+          </div> -->
+
+      </div>
+  </div>
+</section>
 
 
-    <!-------------------- GitHUB ---------------------->
-    <section class="react-activity-calendar">
-        <h1>GitHub React-Activity-Calendar</h1>
-        <img id="github-streak-stats"
-            src="https://github-readme-streak-stats.herokuapp.com?user=ayushi9797&theme=holi-theme&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
-            alt="streakstat" />
-        <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ayushi9797"
-            alt="top_languages" />
-        <img id="github-stats-card"
-            src="https://github-readme-stats.vercel.app/api?username=ayushi9797&count_private=true" alt="stat-card" />
-    </section>
+
+
+
 </body>
 
 </html>
+<script src="./src/index.js"></script>
