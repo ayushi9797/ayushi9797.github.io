@@ -5,13 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 👇 owl crousel for project cards style sheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-   
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+
 </head>
 
 <title> Portfolio === =Ayushi</title>
@@ -38,7 +44,7 @@
         <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
         <li><a href="./image/Ayushi-Soni-Resume.pdf" class="nav-link resume" id="resume-button-1" download>Resume <i
               class="fa fa-download"></i></a></li>
-              <li><button class="toggle">Dark</button></li>
+        <li><button class="toggle">Dark</button></li>
         <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
       </span>
       <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
@@ -47,117 +53,331 @@
 
   <!-- ========================================   HOME  ============================================================================== -->
 
-  
-
-<div id="home">
-  
-  <div>
-      <h1 class="heading">👋 Hello, my name is </h1>
-      <p id="user-detail-name">Ayushi Soni</p>
-      <h1 id="demo"><span> I'm a </span>
-        <span id="demo1"></span> </h1>
-  </div>
-  
-  
-
-  <img class="home-img" src="./image/2.png" alt="">
-
-</div>
-<!-- <div> <img style="margin-top:30%;" alt="Coding" width="300"
-  src="https://storage.googleapis.com/media.helloumi.com/125042/channels/FJ3DZITWCY268043HGFACIP9CFUA9XM6.gif" />
-</div> -->
 
 
+  <div id="width">
 
-<!-- ============================================ ABOUT ================================================================================== -->
-
-<section id="about" class="about section" title="" >
-  <h2 class="title" style="text-align: center; margin-top: 10px;color: rgb(188, 74, 74); font-size: 40px;" class="heading"><i  class="fas fa-user-alt"></i>
-      About <span> Me </span> </h2>
-  <div class="max-width">
-     
-      <div class="about-content">
-              <img src="./image/2.png" alt="">
-          <div class="column right">
-              <div class="text" id="user-detail-name" style="margin-top: 6%;">I'm Ayushii  Soni and I'm a <span class="typing-2"></span></div>
-              <p id="user-detail-intro">Enthusiastic about learning and expressing new technology. An
-                  aspiring node developer with 1200+ hours of practical experience
-                  in coding and building numerous websites have solved 700+ DSA
-                  questions. strong ambition to work as a backend node developer
-                  to produce useful solutions..</p>
-              <a href="./image/Ayushi-Soni-Resume.pdf"> My Resume</a>
-          </div>
+    <div id="home">
+      <div>
+        <h1 style="color:white">👋 Hello, my name is </h1>
+        <p id="user-detail-name">Ayushi Soni</p> <br>
+        <br>
+        <h1 id="demo"><span> I'm a </span><span id="demo1"></span> </h1>
       </div>
-  </div>
-</section>
+
+      <img class="home-img" src="./image/2.png" alt="">
+
+    </div>
 
 
 
-<!-- ============================================ SKILLS ===================================================================================== -->
-<section class="skills" id="skills">
-  <h3 style="text-align: center; margin-top: 20px;color:rgb(246, 33, 69); font-size: 50px;" class="heading"><i  class="fas fa-user-alt"></i>
-    Skills <span></span></h2>
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+    <br>
+    <hr>
 
-  <div class="container">
-      <div class="row"  class ="skills-card" id="skills-cards">
 
-          <!-- <div class="bar">
+
+
+    <!-- ============================================ ABOUT ================================================================================== -->
+
+    <section id="about" class="about section" title="about">
+      <h2 class="title" style="text-align: center; margin-top: 20px;color: orange; font-size: 45px;" class="heading"><i
+          class="fas fa-user-alt"></i>
+        About <span> Me </span> </h2>
+      <div class="max-width">
+
+        <div class="about-content">
+          <img src="./image/2.png" alt="">
+          <div class="column right">
+            <div class="text" id="user-detail-name" style="margin-top: 6%; color: white;">I'm Ayushii Soni and I'm a
+              <span class="typing-2"></span>
+            </div>
+            <p id="user-detail-intro">Enthusiastic about learning and expressing new technology. An
+              aspiring node developer with 1200+ hours of practical experience
+              in coding and building numerous websites have solved 700+ DSA
+              questions. strong ambition to work as a backend node developer
+              to produce useful solutions..</p>
+            <div id="aboutflex">
+              <a href="./image/Ayushi-Soni-Resume.pdf"> My Resume</a> </a>
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <br>
+    <hr>
+    <!--  -->
+
+
+
+
+    <!-- ============================================ SKILLS ===================================================================================== -->
+    <section class="skills" id="skills">
+      <h3 style="text-align: center; margin-top: 20px;color:white; font-size: 40px;" class="heading"><i
+          class="fas fa-user-alt"></i>
+        Skills <span></span></h2>
+        <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+        <div class="container">
+          <div class="row" class="skills-card" id="skills-cards">
+
+            <!-- <div class="bar">
             <div class="info">
               <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
               <span>AdobeXD</span>
             </div>
           </div> -->
 
+          </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================ PROJECT =================================================================== -->
+    <section class="teams" id="projects">
+      <h1>Projects</h1>
+      <div class="container">
+
+        <div class="carousel owl-carousel">
+          <div class="project-card">
+            <div class="box">
+              <img src="./image/myntra.png" alt="myntra">
+              <div class="project-title" id="text">Fauget_fashion</div>
+              <p class="project-description">Faucet Fashion is an e-commerce store for fashion and lifestyle products..</p>
+              <h3 class="project-tech-stack"> <span style="color: rgb(92, 92, 226);">Html</span> | <span
+                  style="color: orange;">CSS</span> | <span style="color: rgb(81, 208, 81);">JavaScript</span></h3>
+              <p class="project-github-link">Github link <a
+                  href="https://github.com/ayushi9797/wiry-measure-2833"></a></p>
+              <p class="project-deployed-link"> Deployed link<a
+                  href="https://lively-blini-b17740.netlify.app/"></a></p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="box">
+              <img src="./image/NYKAA.png" alt="">
+              <div class="project-title" id="text">BEAUTIFY</div>
+              <p class="project-description">Beautify is an e-commerce website that sells beauty, wellness, and
+                fashion products.
+              </p>
+              <h3 class="project-tech-stack"> <span style="color: rgb(105, 105, 223);">Html</span> | <span
+                  style="color:orange;">CSS</span> | <span style="color: rgb(70, 216, 70);">JavaScript</span></h3>
+              <p class="project-github-link">Github link <a
+                  href="https://github.com/Abhinav068/crazy-magic-8774"></a></p>
+              <p class="project-deployed-link"> Deployed link<a
+                  href="https://cheerful-dieffenbachia-a7ea87.netlify.app/"></a></p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="box">
+              <img src="./image/foodq.png" alt="">
+              <div class="project-title" id="text">FOOD QUEST EXPRESS</div>
+              <p class="project-description">Food Quest Express is India’s pioneering food destination present
+                through physical retail stores, an online portal, and a mobile application.
+              </p>
+              <h3 class="project-tech-stack"> <span style="color: rgb(105, 105, 223);">Html</span> | <span
+                  style="color:orange">CSS</span> | <span style="color:  rgb(70, 216, 70)">JavaScript</span></h3>
+              <p class="project-github-link">Github link <a
+                  href="https://github.com/ayushi9797/crabby-desk-491"></a></p>
+              <p class="project-deployed-link"> Deployed link<a
+                  href="https://steady-jelly-a270a9.netlify.app/"></a></p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--=========================================== Github ========================================================================================== -->
+
+    <section class="react-activity-calendar">
+      <h1 style="text-align: center;margin-top: 2%;color: white;font-size: 35px;">GitHub React-Activity-Calendar</h1>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img id="github-streak-stats"
+              src="https://github-readme-streak-stats.herokuapp.com?user=ayushi9797&theme=holi-theme&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
+              alt="streakstat" /></div>
+          <div class="swiper-slide"> <img id="github-top-langs"
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=ayushi9797&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1117"
+              alt="top_languages" /></div>
+          <div class="swiper-slide"> <img id="github-stats-card"
+              src="https://github-readme-stats.vercel.app/api?username=ayushi9797&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117"
+              alt="stat-card" /></div>
+          <div class="swiper-slide"><img style="width: 100%;" id="github-graph"
+              src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ayushi9797" />
+          </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
       </div>
-  </div>
-</section>
+    </section>
 
-<!--=========================================== Project ========================================================================================== -->
+    <!-- contact -->
 
-<section id="projects">Projects
+    <section class="contact" id="contact">
+      <h1>CONTACT ME</h1>
+      <div class="container">
+          <h5 class="title text-center m-heading text-secondary">CONTACT ME</h5>
+          <div class="contact-content">
+              <div style="margin-left: 2%;" class="column left">
+                  <h2> Hello</h2>
+                  <form>
+                      <div class="form-group">
+                          <input type="text" name="name" id="name" placeholder="Your Name">
+                      </div>
+                      <div class="form-group">
+                          <input type="email" name="email" id="email" placeholder="Your Email">
+                      </div>
+                      <div class="form-group">
+                          <input type="text" name="subject" id="subject" placeholder="Your Subject">
+                      </div>
+                      <div class="form-group">
+                          <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                      </div>
+                      <button type="submit" class="btn-md">Send  your Message</button>
+                  </form>
+              </div>
+              <div class="column right">
+                  <h2>Contact Info</h2>
+                  <p class="lead">Hey folks, this is my contact information through which you can reach me. Please
+                      feel free to write your queries in the query box provided</p>
+                  <div class="items">
+                      <div class="item">
+                          <i class="fa-solid fa-envelope"></i>
+                          <div class="text">
+                              <h3>Email</h3>
+                              <p><span id="contact-email">soniayushi345@gmail.com</span></p>
+                          </div>
+                      </div>
+                      <div class="item">
+                          <i class="fa-solid fa-phone"></i>
+                          <div class="text">
+                              <h3>Phone</h3>
+                              <p><span id="contact-phone">+91 63...</span></p>
+                          </div>
+                      </div>
 
-  <div class="project-card">
-  </div>
+                      <div class="item">
+                          <i class="fa-solid fa-address-book"></i>
+                          <div class="text">
+                              <h3>Address</h3>
+                              <p><span>JHANSI,</span></p>
+                              <p><span>U.P, Pincode 284204</span></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <p>Visit my social profile and get connected</p>
+                      <ul class="links">
+                          <li><a id="contact-github" href="https://github.com/ayushi9797"><i
+                                      class="bx bxl-dribbble bx-md"></i></a></li>
+                          <li><a id="contact-linkedin" href="https://www.linkedin.com/in/ayushi-soni-145b28260/"><i
+                                      class="bx bxl-instagram-alt bx-md"></i></a>
+                          </li>
+                          <li><a href="#"><i class="bx bxl-twitter bx-md"></i></a></li>
+                          <li><a href="#"><i class="bx bxl-youtube bx-md"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      </div>
 
-</section>
+  </section>
 
-<!-- ========================================== Contact ================================================== -->
 
-<section id="contact">
-  <h1>Contact</h1>
-  <a id="contact-github" href="https://github.com/ayushi9797">GitHub</a>
-  <a id="contact-linkedin" href="https://www.linkedin.com/in/ayushi-soni-145b28260/">LinkedIn</a>
-  <a id="contact-phone" href="#">Mobile</a>
-  <a id="contact-email" href="soniayushi345@gmail.com">Email</a>
-</section>
+    <!-- footer -->
 
-<!-- =========================================== resume  ======================================================== -->
+    <footer id="footer">
+      <p>&copy; 2023. Designed by Ayushi Soni. All Rights Reserved.</p>
+    </footer>
 
-<section id="resume">
-  <button id="resume-button-1" src="">Resume 1
-       
-  </button>
-  <button id="resume-button-2" src="">Resume 2</button>
-</section>
 
-<!-- ========================================  github ====================================================================  -->
 
-<section class="react-activity-calendar">
-  <h1>GitHub React-Activity-Calendar</h1>
-  <img id="github-streak-stats"
-       src="https://github-readme-streak-stats.herokuapp.com?user=ayushi9797&theme=holi-theme&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
-       alt="streakstat" />
-  <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ayushi9797"
-       alt="top_languages" />
-  <img id="github-stats-card"
-       src="https://github-readme-stats.vercel.app/api?username=ayushi9797&count_private=true"
-       alt="stat-card" />
-</section> 
+
+
+
+
+
+
+
+
 
 
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
 <script src="./src/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+
+  
+
+  //  projects ================================================>
+
+  $('.carousel').owlCarousel({
+    margin: 20,
+    loop: true,
+    navigation: true,
+    autoplay: true,
+    autoplayTimeOut: 1000,
+    autoplayHoverPause: true,
+
+    responsive: {
+      0: {
+        items: 1,
+        nav: false
+      },
+      600: {
+        items: 2,
+        nav: false
+      },
+      1000: {
+        items: 3,
+        nav: false
+      }
+    }
+  });
+
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 45,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
+
+
+</script>
+
+<!-- projects -->
+

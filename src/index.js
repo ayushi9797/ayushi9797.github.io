@@ -22,7 +22,7 @@ window.addEventListener("focus", () => {
 // ======================================== About ======================================================================
 let i = 0;
 let txt = "FULL STACK WEB Developer.";
-let speed = 85;
+let speed = 98;
 
 typeWriter();
 
@@ -80,3 +80,5 @@ function showSkills(skills) {
 fetchData().then((data) => {
   showSkills(data);
 });
+
+// ============ contacct ===================================================
