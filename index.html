@@ -1,392 +1,995 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 👇 owl crousel for project cards style sheet -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <!-- 👇Github calender style sheet -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"> -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link rel="icon" href="assets/img/about.png" />
 
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 
-</head>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-<title> Portfolio === Ayushi</title>
-<style>
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
+    <link rel="stylesheet" href="./assets/css/github_states.css" />
 
-</style>
-</head>
+    <title>Ayushi Soni</title>
+  </head>
 
-<body>
+  <body>
+    <!-- -----------------------------------------------------| NAVBAR |------------------------------------------------------ -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Ayushi Soni</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a class="nav__link nav-link home" href="#home">
+                <i class="uil uil-estate nav__icon"></i>Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav-link about" href="#about ">
+                <i class="uil uil-user nav__icon"></i>About</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav-link skills" href="#skills">
+                <i class="uil uil-file-alt nav__icon"></i>Skills</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav-link projects" href="#projects">
+                <i class="uil uil-briefcase-alt nav__icon"></i>Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav-link contact" href="#contact">
+                <i class="uil uil-link-alt nav__icon"></i>Contact Me</a
+              >
+            </li>
 
-  <!-- ===================================================  NAVBAR ======================================================================== -->
+            <li class="nav__item">
+              <a
+                id="resume-button-1"
+                download
+                class="nav__link nav-link resume"
+                target="_blank"
+                href="./assets/pdf/resume.pdf"
+              >
+                <i class="uil uil-file-blank nav__icon"></i>Resume
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close nav__icon" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps nav__icon"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-  <nav id="nav-menu">
-    <ul>
-      <img src="./image/logoo.png.jpeg" />
+    <!-- ----------------------------------------------------------- | HOME | -------------------------------------------------->
 
-      <input type="checkbox" id="check" />
-      <span class="menu">
-        <li><a class="nav-link home" href="#home">HOME</a></li>
-        <li><a class="nav-link about" href="#about">ABOUT</a></li>
-        <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
-        <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
-        <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
-        <li><a href="./image/Ayushi-Soni-Resume.pdf" class="nav-link resume" id="resume-button-1" download>Resume <i
-              class="fa fa-download"></i></a></li>
-        <li><button class="toggle">Dark</button></li>
-        <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-      </span>
-      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-    </ul>
-  </nav>
-
-  <!-- ========================================   HOME  ============================================================================== -->
-
-
-
-  <div id="width">
-
-    <div id="home">
-      <div>
-        <h1 style="color:white">👋 Hello, my name is </h1>
-        <p id="user-detail-name">Ayushi Soni</p> <br>
-        <br>
-        <h1 id="demo"><span> I'm a </span><span id="demo1"></span> </h1>
-      </div>
-
-      <img class="home-img" src="./image/2.png" alt="">
-
-    </div>
-
-
-
-    <br>
-    <hr>
-
-
-
-
-    <!-- ========================================================== ABOUT =============================================================== -->
-
-    <section id="about" class="about section" title="about">
-      <h2 class="title" style="text-align: center; margin-top: 20px;color: orange; font-size: 45px;" class="heading"><i
-          class="fas fa-user-alt"></i>
-        About <span> Me </span> </h2>
-      <div class="max-width">
-
-        <div class="about-content">
-          <img src="./image/2.png" alt="">
-          <div class="column right">
-            <div class="text" id="user-detail-name" style="margin-top: 6%; color: white;">I'm Ayushii Soni and I'm a
-              <span class="typing-2"></span>
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <!-- socials -->
+            <div class="home__social">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/ayushi-soni-145b28260/"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                target="_blank"
+                href="https://github.com/ayushi9797"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+              <a
+                target="_blank"
+                href="https://twitter.com/soniayushi345"
+                class="home__social-icon"
+              >
+                <i class="uil uil-twitter-alt"></i>
+              </a>
             </div>
-            <p id="user-detail-intro">Enthusiastic about learning and expressing new technology. An
+            <!-- profile image -->
+
+            <div class="home__img">
+              <img
+                src="./assets/img/tp.png"
+                class="home-img"
+                style="display: none"
+                alt=""
+              />
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+
+                  <image class="home__blob-img" href="./assets/img/tp.png" />
+                </g>
+              </svg>
+            </div>
+            <!------------------------------------------------------ summary ---------------------------------------------------------------------- -->
+            <div class="home__data">
+              <h1 id="user-detail-name" class="home__title">
+                Hii, I'm Ayushi Soni
+              </h1>
+              <h3 class="home__subtitle">FULL STACK WEB DEVELOPER</h3>
+              <p class="home__description">
+                Enthusiastic about learning and expressing new technology. An
+                aspiring node developer with 1200+ hours of practical experience
+                in coding and building numerous websites. Solved 700+ DSA
+                questions. Strong ambition to work as a backend developer to
+                produce valuable solutions.
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contact Me
+                <i class="uil uil-comment-alt button__icon"></i>&nbsp&nbsp
+              </a>
+            </div>
+          </div>
+          <!-- div scrolll -->
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-angle-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--  ----------------------|project-section |---------------------------------------------->
+
+      <section class="portfolio section" id="projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="portfolio__content grid swiper-slide project-card">
+              <figure class="portfolio__figure">
+                <img
+                  src="./assets/img/myntra.png"
+                  alt=""
+                  class="skills-card-img portfolio__img"
+                />
+              </figure>
+              <div class="portfolio__data">
+                <h3 class="portfolio__title project-title">Fauget fashion</h3>
+                <p
+                  class="portfolio__description project-tech-stack project-description"
+                >
+                  Faucet Fashion is an e-commerce store for fashion and
+                  lifestyle products
+                  <br />
+                  Tech Stack :->
+                   Node JS | Express | MongoDB | Postman | HTML
+                  |CSS | JavaScript
+                  <br />
+                  functionlity:-> 
+                  6 Modules: Admin, User, Sorting, Filtering,
+                  Searching, response in mobile application Users can log in, in
+                  available view products, and purchase the products. All data
+                  are stored in a database Created various Restful API endpoints
+                </p>
+                <a
+                  href="https://github.com/ayushi9797/wiry-measure-2833"
+                  target="_blank"
+                  class="project-github-link button button--flex button--small portfolio__button"
+                >
+                  GitHubLink
+                  <i class="uil uil-github-alt button__icon"></i>&nbsp
+                </a>
+                <a
+                  href="https://lively-blini-b17740.netlify.app/"
+                  target="_blank"
+                  class="button button--flex project-deployed-link button--small portfolio__button"
+                >
+                  DeployedLink
+                  <i class="uil uil-external-link-alt button__icon"></i>&nbsp
+                </a>
+              </div>
+            </div>
+
+            <!-- --------------------------------------------- | 2 | ----------------------------------------------------------- -->
+
+            <div class="portfolio__content grid swiper-slide project-card">
+              <figure class="portfolio__figure">
+                <img
+                  src="./assets/img/NYKAA.png"
+                  alt=""
+                  class="skills-card-img portfolio__img"
+                />
+              </figure>
+              <div class="portfolio__data">
+                <h3 class="portfolio__title project-title">BEAUTIFY</h3>
+                <p
+                  class="portfolio__description project-tech-stack project-description"
+                >
+                  Beautify is an e-commerce website that sells beauty, wellness,
+                  and fashion products. <br />
+                  Tech Stack : HTML | CSS | JavaScript | API | Postman <br />
+                  Areas of Responsibility Built the Homepage And Navbar
+                  Contributed to admin CSS
+                  <br />
+                </p>
+                <a
+                  href="https://github.com/Abhinav068/crazy-magic-8774"
+                  target="_blank"
+                  class="project-github-link button button--flex button--small portfolio__button"
+                >
+                  GitHubLink
+                  <i class="uil uil-github-alt button__icon"></i>&nbsp
+                </a>
+                <a
+                  href="https://cheerful-dieffenbachia-a7ea87.netlify.app/"
+                  target="_blank"
+                  class="button button--flex project-deployed-link button--small portfolio__button"
+                >
+                  DeployedLink
+                  <i class="uil uil-external-link-alt button__icon"></i>&nbsp
+                </a>
+              </div>
+            </div>
+
+            <!-- -------------------------------- | 3 | ------------------------------------------------------ -->
+
+            <div class="portfolio__content grid swiper-slide project-card">
+              <figure class="portfolio__figure">
+                <img
+                  src="./assets/img/foodq.png"
+                  alt=""
+                  class="skills-card-img portfolio__img"
+                />
+              </figure>
+              <div class="portfolio__data">
+                <h3 class="portfolio__title project-title">
+                  FOOD QUEST EXPRESS
+                </h3>
+                <p
+                  class="portfolio__description project-tech-stack project-description"
+                >
+                  Food Quest Express is India’s pioneering food destination
+                  present through physical retail stores, an online portal, and
+                  a mobile application <br />
+                  Tech Stack : HTML | CSS | JavaScript
+                </p>
+                <a
+                  href="https://github.com/ayushi9797/crabby-desk-491"
+                  target="_blank"
+                  class="project-github-link button button--flex button--small portfolio__button"
+                >
+                  GitHubLink
+                  <i class="uil uil-github-alt button__icon"></i>&nbsp
+                </a>
+                <a
+                  href="https://steady-jelly-a270a9.netlify.app/"
+                  target="_blank"
+                  class="button button--flex project-deployed-link button--small portfolio__button"
+                >
+                  DeployedLink
+                  <i class="uil uil-external-link-alt button__icon"></i>&nbsp
+                </a>
+              </div>
+            </div>
+            <!-- --------------------------------- | 4 | -------------------------------------------- -->
+
+            <div class="portfolio__content grid swiper-slide project-card">
+              <figure class="portfolio__figure">
+                <img
+                  src="./assets/img/PORTFOLIO.png"
+                  alt=""
+                  class="skills-card-img portfolio__img"
+                />
+              </figure>
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title project-title">
+                  AYUSHISONI9797.GITHUB.IO
+                </h3>
+                <p
+                  class="portfolio__description project-tech-stack project-description"
+                >
+                  WELCOME TO MY PORTFOLIO. <br />
+                  <br />Tech Stack : HTML | CSS | JavaScript
+
+                  <br />
+                  <a
+                    href="https://www.youtube.com/watch?v=27JtRAI3QO8"
+                    style="text-decoration: none; color: rgb(176, 176, 176)"
+                    target="_blank"
+                    >Thanks to YOUTUBE FOR HELPING</a
+                  >
+                </p>
+                <a
+                  href="https://github.com/ayushi9797/ayushi9797.github.io"
+                  target="_blank"
+                  class="project-github-link button button--flex button--small portfolio__button"
+                >
+                  GitHubLink
+                  <i class="uil uil-github-alt button__icon"></i>&nbsp
+                </a>
+                <a
+                  href="https://ayushi9797.github.io/"
+                  target="_blank"
+                  class="button button--flex project-deployed-link button--small portfolio__button"
+                >
+                  DeployedLink
+                  <i class="uil uil-external-link-alt button__icon"></i>&nbsp
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <br /><br />
+
+      <!-- -----------------------------------| ABOUT | ---------------------------------------------------------->
+
+      <section class="about section" id="about">
+        <p id="user-detail-intro" style="display: none">
+          "JavaScript","MongoDB","NodeJS","HTML","CSS","Express"
+        </p>
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle"></span>
+
+        <div class="about__container container">
+          <img src="assets/img/about.jpeg" alt="" class="about__img" />
+
+          <div class="about__data">
+            <p class="about__description" id="user-detail-intro">
+              Hi! I'm Ayushi soni
+              <br /><br />
+              I'm Learing Full Stack Web Development at Masai School.
+              <br /><br />
+              Enthusiastic about learning and expressing new technology. An
               aspiring node developer with 1200+ hours of practical experience
-              in coding and building numerous websites have solved 700+ DSA
-              questions. strong ambition to work as a backend node developer
-              to produce useful solutions..</p>
-            <div id="aboutflex">
-              <a href="./image/Ayushi-Soni-Resume.pdf"> My Resume</a> </a>
+              in coding and building numerous websites. Solved 700+ DSA
+              questions. Strong ambition to work as a backend developer to
+              produce valuable solution
+              <br /><br />
+            </p>
 
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">1200+</span>
+                <span class="about__info-name"
+                  >Hours of <br />
+                  Coding</span
+                >
+              </div>
+
+              <div>
+                <span class="about__info-title">700+</span>
+                <span class="about__info-name"
+                  >DSA <br />
+                  Problems
+                </span>
+              </div>
+              <div>
+                <span class="about__info-title">25+</span>
+                <span class="about__info-name"
+                  >Completed <br />
+                  Project</span
+                >
+              </div>
+            </div>
+
+            <div class="about__buttons" id="resume-button-2">
+              <a
+                id="resume-button-2"
+                download=""
+                href="assets/pdf/resume.pdf"
+                target="_blank"
+                class="button button--flex"
+              >
+                Download CV<i class="uil uil-cloud-download button__icon"></i
+                >&nbsp&nbsp
+              </a>
             </div>
           </div>
         </div>
-    </section>
+      </section>
 
-    <br>
-    <hr>
+      <a
+        href="/Ayushi-Soni-Resume.pdf"
+        id="resume-link-1"
+        class="nav__link nav-link resume"
+        download="Ayushi-Soni-Resume"
+        onclick="window.open('https://drive.google.com/file/d/1nfJ0k1ErSj7KqhOWDk0UeAjmRK1D4ab9/view?usp=sharing')"
+      >
+        <i class="uil uil-message nav_icon"></i> Resume
+      </a>
 
+      <!----------------------------------------------------------------- SKILLS section ---------------------------------------------------------------- -->
 
-    <!-- ================================= SKILLS =========================================================================== -->
-    <section class="skills" id="skills">
-      <h3 style="text-align: center; margin-top: 20px;color:white; font-size: 40px;" class="heading"><i
-          class="fas fa-user-alt"></i>
-        Skills <span></span></h2>
-        <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
 
-        <div class="container">
-          <div class="row" class="skills-card" id="skills-cards">
+        <div class="skills__container container grid">
+          <div>
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-brackets-curly skills__icon"></i>
 
-            <!-- <div class="bar">
-            <div class="info">
-              <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
-              <span>AdobeXD</span>
+                <div>
+                  <h1 class="skills__title">Frontend Development</h1>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data skills-card">
+                  <div class="skills__titles">
+                    <h3 class="skills__name skills-card-name">HTML</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <img class="skills-card-img fyouseek" src="" alt="" />
+                    <span class="skills__percentage skills__80"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data skills-card">
+                  <div class="skills__titles">
+                    <h3 class="skills__name skills-card-name">CSS</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <img class="skills-card-img fyouseek" src="" alt="" />
+                    <span class="skills__percentage skills__70"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data skills-card">
+                  <div class="skills__titles">
+                    <h3 class="skills__name skills-card-name">JavaScript</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <img class="skills-card-img fyouseek" src="" alt="" />
+                    <span class="skills__percentage skills__80"></span>
+                  </div>
+                </div>
+                <div class="skills__data skills-card">
+                  <div class="skills__titles">
+                    <h3 class="skills__name skills-card-name">Boostrap</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <img class="skills-card-img fyouseek" src="" alt="" />
+                    <span class="skills__percentage skills__70"></span>
+                  </div>
+                </div>
+                <div class="skills__data skills-card">
+                  <div class="skills__titles">
+                    <h3 class="skills__name skills-card-name">swiperjs</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <img class="skills-card-img fyouseek" src="" alt="" />
+                    <span class="skills__percentage skills__70"></span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div> -->
+          </div>
+          <!-- Backend -->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-cloud-database-tree skills__icon"></i>
 
+              <div>
+                <h1 class="skills__title">Backend Development</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">Node JS</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">Express JS</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">Redis</h3>
+                  <span class="skills__number">60%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__60"></span>
+                </div>
+              </div>
+
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">Mongoose</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">MongoDB</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">Rest APIs</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tools -->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-arrow skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Tools</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">
+                    VS-Code | Codepan | Replit
+                  </h3>
+                  <span class="skills__number">90%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__90"></span>
+                </div>
+              </div>
+
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">
+                    Netlify | Vercel | cylic.sh
+                  </h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">Git & Github</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">Postman</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">Canva</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">NPM</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- softskills -->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-analysis skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Soft Skills</h1>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">
+                    Project Management
+                  </h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">Team Working</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">
+                    Remotely Working
+                  </h3>
+                  <span class="skills__number">90%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__90"></span>
+                </div>
+              </div>
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">Problem-Solving</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+              <div class="skills__data skills-card">
+                <div class="skills__titles">
+                  <h3 class="skills__name skills-card-name">Adaptability</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <img class="skills-card-img fyouseek" src="" alt="" />
+                  <span class="skills__percentage skills__70"></span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-    </section>
+      </section>
 
+      <!-- ------------------------------------- | github calender | ------------------------------------------------------ -->
 
-    <!-- ============================================ PROJECT =================================================================== -->
-    <section class="teams" id="projects">
-      <h1>Projects</h1>
-      <div class="container">
+      <section
+        class="about section container react-activity-calendar"
+        id="github"
+      >
+        <h2 class="section__title">MY GITHUB CONTRIBUTION</h2>
+        <div class="Github-calendar">ayushi9797 :-)</div>
+      </section>
 
-        <div class="carousel owl-carousel">
-          <div class="project-card">
-            <div class="box">
-              <img src="./image/myntra.png" alt="myntra">
-              <div class="project-title" id="text">Fauget_fashion</div>
-              <p class="project-description">Faucet Fashion is an e-commerce store for fashion and lifestyle products..
-              </p>
-              <h3 class="project-tech-stack"> <span style="color: rgb(92, 92, 226);">Html</span> | <span
-                  style="color: orange;">CSS</span> | <span style="color: rgb(81, 208, 81);">JavaScript</span></h3>
-              <p class="project-github-link">Github link <a href="https://github.com/ayushi9797/wiry-measure-2833"></a>
-              </p>
-              <p class="project-deployed-link"> Deployed link<a href="https://lively-blini-b17740.netlify.app/"></a></p>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="box">
-              <img src="./image/NYKAA.png" alt="">
-              <div class="project-title" id="text">BEAUTIFY</div>
-              <p class="project-description">Beautify is an e-commerce website that sells beauty, wellness, and
-                fashion products.
-              </p>
-              <h3 class="project-tech-stack"> <span style="color: rgb(105, 105, 223);">Html</span> | <span
-                  style="color:orange;">CSS</span> | <span style="color: rgb(70, 216, 70);">JavaScript</span></h3>
-              <p class="project-github-link">Github link <a href="https://github.com/Abhinav068/crazy-magic-8774"></a>
-              </p>
-              <p class="project-deployed-link"> Deployed link<a
-                  href="https://cheerful-dieffenbachia-a7ea87.netlify.app/"></a></p>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="box">
-              <img src="./image/foodq.png" alt="">
-              <div class="project-title" id="text">FOOD QUEST EXPRESS</div>
-              <p class="project-description">Food Quest Express is India’s pioneering food destination present
-                through physical retail stores, an online portal, and a mobile application.
-              </p>
-              <h3 class="project-tech-stack"> <span style="color: rgb(105, 105, 223);">Html</span> | <span
-                  style="color:orange">CSS</span> | <span style="color:  rgb(70, 216, 70)">JavaScript</span></h3>
-              <p class="project-github-link">Github link <a href="https://github.com/ayushi9797/crabby-desk-491"></a>
-              </p>
-              <p class="project-deployed-link"> Deployed link<a href="https://steady-jelly-a270a9.netlify.app/"></a></p>
-            </div>
-          </div>
-        </div>
-    </section>
+      <section class="portfolio section githubstates" id="githubstates">
+        <h2 class="section__title">GitHub Activities</h2>
 
-    <!--=========================================== Github ========================================================================================== -->
-
-    <section class="react-activity-calendar">
-      <h1 style="text-align: center;margin-top: 2%;color: white;font-size: 35px;">GitHub React-Activity-Calendar</h1>
-
-      <!-- Swiper -->
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img id="github-streak-stats"
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper github-images">
+            <img
+              id="github-streak-stats"
+              class="portfolio__content grid swiper-slide"
               src="https://github-readme-streak-stats.herokuapp.com?user=ayushi9797&theme=holi-theme&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
-              alt="streakstat" /></div>
-          <div class="swiper-slide"> <img id="github-top-langs"
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=ayushi9797&langs_count=8&count_private=true&layout=compact&theme=react&hide_border=true&bg_color=0D1117"
-              alt="top_languages" /></div>
-          <div class="swiper-slide"> <img id="github-stats-card"
-              src="https://github-readme-stats.vercel.app/api?username=ayushi9797&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117"
-              alt="stat-card" /></div>
-          <div class="swiper-slide"><img style="width: 100%;" id="github-graph"
-              src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ayushi9797" />
+            />
+
+            <img
+              id="github-top-langs"
+              class="portfolio__content grid swiper-slide"
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=ayushi9797&show_icons=true&locale=en&layout=compact&theme=github_dark&hide_border=true"
+              alt="ovi"
+            />
+
+            <img
+              id="github-stats-card"
+              class="portfolio__content grid swiper-slide"
+              src="https://github-readme-stats.vercel.app/api?username=ayushi9797&show_icons=true&locale=en&theme=github_dark&hide_border=true"
+              alt="ovi"
+            />
+
+            <img
+              class="portfolio__content grid swiper-slide"
+              src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ayushi9797&theme=github_dark"
+            />
           </div>
 
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-
-      </div>
-      <div id="calendar">
-        <h2 style="text-align: center;font-size: 40px;" ;class="textforcalender"> <span
-            style="color: orange;">Github</span> <span style="color: white;"> Calendar</span></h2>
-
-        <div style="margin-top: 10%;width: 80%;margin-top: 4%;" class="react-activity-calendar calendar">
-          <!-- Loading stuff -->
-          Loading the data just for you.
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================= contact  =============================================================-->
-
-    <section class="contact" id="contact">
-      <h1>CONTACT ME</h1>
-      <div class="container">
-        <div class="contact-content">
-          <div style="margin-left: 2%;" class="column left">
-            <h2> Hello</h2>
-            <form>
-              <div class="form-group">
-                <input style="width:70%" type="text" name="name" id="name" placeholder=" Enter Your Name">
-              </div>
-              <div class="form-group">
-                <input style="width:70%" type="email" name="email" id="email" placeholder=" Enter Your Email">
-              </div>
-              <div class="form-group">
-                <input style="width:70%" type="text" name="subject" id="subject" placeholder="Enter Your Subject">
-              </div>
-              <div class="form-group">
-                <textarea style="width:70%" name="message" id="message"
-                  placeholder=" Please Send Your Message"></textarea>
-              </div>
-              <button type="submit" class="btn-md">Send your Message</button>
-            </form>
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
           </div>
-          <div style="margin-right: 1%;" class="column right">
-            <h2>Contact Info</h2>
-            <p class="lead">Hey folks, this is my contact information through which you can reach me. Please
-              feel free to write your queries in the query box provided</p>
-            <div class="items">
-              <div class="item">
-                <i class="fa-solid fa-envelope"></i>
-                <div class="text">
-                  <h3>Email</h3>
-                  <p><span id="contact-email">soniayushi345@gmail.com</span></p>
-                </div>
-              </div>
-              <div class="item">
-                <i class="fa-solid fa-phone"></i>
-                <div class="text">
-                  <h3>Phone</h3>
-                  <p><span id="contact-phone">+91 63...</span></p>
-                </div>
-              </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
 
-              <div class="item">
-                <i class="fa-solid fa-address-book"></i>
-                <div class="text">
-                  <h3>Address</h3>
-                  <p><span>JHANSI,</span></p>
-                  <p><span>U.P, Pincode 284204</span></p>
-                </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <br /><br />
+
+      <!-- ---------------------------------------------- |  CONTACT -SECTION | ------------------------------------------------------- -->
+
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a style="display: none" target="_blank" id="contact-email">
+          <p><i class="fa fa-envelope"></i> soniayushi345</p>
+        </a>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <a href="https://github.com/ayushi9797" target="_blank"
+                ><i class="uil uil-github contact__icon"></i
+              ></a>
+              <div>
+                <h3 class="contact__title">GitHub</h3>
+                <a
+                  id="contact-github"
+                  href="https://github.com/ayushi9797"
+                  target="_blank"
+                  ><span class="contact__subtitle">@ayushi9797</span></a
+                >
               </div>
             </div>
+
+            <div class="contact__information">
+              <a
+                id="contact-linkedin"
+                href="https://www.linkedin.com/in/ayushi-soni-145b28260/"
+                target="_blank"
+                ><i class="uil uil-linkedin contact__icon"></i
+              ></a>
+              <div>
+                <h3 class="contact__title">LinkedIn</h3>
+                <a
+                  href="https://www.linkedin.com/in/ayushi-soni-145b28260/"
+                  target="_blank"
+                  ><span class="contact__subtitle"
+                    >https://www.linkedin.com/in/ayushi-soni-145b28260/</span
+                  ></a
+                >
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <a id="contact-email" href="mailto:soniayushi345@gmail.com"
+                ><i class="uil uil-envelope-alt contact__icon"></i
+              ></a>
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <a href="mailto:soniayushi345@gmail.com"
+                  ><span class="contact__subtitle"
+                    >soniayushi345@gmail.com</span
+                  ></a
+                >
+              </div>
+            </div>
+            <div class="contact__information">
+              <a
+                href="https://www.instagram.com/soniayushi345/?hl=en"
+                target="_blank"
+              >
+                <i class="uil uil-instagram contact__icon"></i
+              ></a>
+
+              <div>
+                <h3 id="contact-phone" class="contact__title">Instagram</h3>
+                <a
+                  href="https://www.instagram.com/soniayushi345/?hl=en"
+                  target="_blank"
+                  ><span class="contact__subtitle">soniayushi345</span></a
+                >
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">JHANSI , UTTAR PRADESH</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="contact__label">Name</label>
+                <input type="text" class="contact__input" />
+              </div>
+
+              <div class="contact__content">
+                <label for="" class="contact__label">Email</label>
+                <input type="email" class="contact__input" />
+              </div>
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label">Project</label>
+              <input type="text" class="contact__input" />
+            </div>
+            <div class="contact__content">
+              <label for="" class="contact__label"> Write Your Message ....</label>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div>
+
             <div>
-              <p>Visit my social profile and get connected</p>
-              <ul class="links">
-                <li><a id="contact-github" href="https://github.com/ayushi9797"><i
-                      class="bx bxl-dribbble bx-md"></i></a></li>
-                <li><a id="contact-linkedin" href="https://www.linkedin.com/in/ayushi-soni-145b28260/"><i
-                      class="bx bxl-instagram-alt bx-md"></i></a>
-                </li>
-                <li><a href="#"><i class="bx bxl-twitter bx-md"></i></a></li>
-                <li><a href="#"><i class="bx bxl-youtube bx-md"></i></a></li>
-              </ul>
+              <a
+                href="mailto:soniayushi345@gmail.com"
+                class="button button--flex"
+              >
+                Send Message
+                <i class="uil uil-comment-alt button__icon"></i>&nbsp&nbsp
+              </a>
             </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    
+
+    <!--  ---------------------------------------------------- | footer |---------------------------------------- -->
+
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <span class="footer__title">Ayushi Soni</span> <br />
+            <span class="footer__subtitle">Full Stack Web Developer</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#home" class="footer__link">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="footer__link">About</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a
+              href="https://www.linkedin.com/in/ayushi-soni-145b28260/"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/ayushi9797 "
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-github"></i>
+            </a>
           </div>
         </div>
+        <p class="footer__copy">
+          Made with <span style="color: #e25555">&hearts;</span> by Ayushi Soni
+          <br />
+          Copyright &#169; Ayushi Soni. All rights reserved.
+        </p>
       </div>
-  </div>
-  </div>
+    </footer>
 
-  </section>
-
-
-  <!--  ================================== | footer |============================================-->
-
-  <footer id="footer">
-    <p>&copy; 2023. Designed by Ayushi Soni. All Rights Reserved.</p>
-  </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+  </body>
 </html>
 
-
-
-
-
-
-
-
-
-
-<script src="./index.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-
 <script>
-
-
-
-  //  projects ================================================>
-
-  $('.carousel').owlCarousel({
-    margin: 20,
-    loop: true,
-    navigation: true,
-    autoplay: true,
-    autoplayTimeOut: 1000,
-    autoplayHoverPause: true,
-
-    responsive: {
-      0: {
-        items: 1,
-        nav: false
-      },
-      600: {
-        items: 2,
-        nav: false
-      },
-      1000: {
-        items: 3,
-        nav: false
-      }
-    }
-  });
-
-  var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 45,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-
-  // calender
-
-  GitHubCalendar(".calendar", "prernadave");
-
-  // or enable responsive functionality:
-  GitHubCalendar(".calendar", "prernadave", { responsive: true });
-
+  GitHubCalendar(".Github-calendar", "ayushi9797", { responsive: true });
 </script>
 
-<!-- projects -->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+<!-- =========================================== Thank you ==================================================================== -->
