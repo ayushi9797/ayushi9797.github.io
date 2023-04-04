@@ -194,9 +194,9 @@ themeButton.addEventListener('click', () => {
 // resume btns fucntion
 
 document.getElementById("resume-button-1").onclick = () => {
-    window.open("ayushi drive link resume");
+    window.open("https://drive.google.com/file/d/1nfJ0k1ErSj7KqhOWDk0UeAjmRK1D4ab9/view?usp=sharing");
 }
 
 document.getElementById("resume-button-2").onclick = () => {
-    window.open("ayushi d l r");
+    window.open("https://drive.google.com/file/d/1nfJ0k1ErSj7KqhOWDk0UeAjmRK1D4ab9/view?usp=sharing");
 }
