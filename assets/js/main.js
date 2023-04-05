@@ -197,11 +197,14 @@ document.getElementById("resume-button-1").onclick = () => {
     window.open("https://drive.google.com/file/d/1nfJ0k1ErSj7KqhOWDk0UeAjmRK1D4ab9/view?usp=sharing");
 }
 
+
 document.getElementById("resume-button-2").onclick = () => {
     window.open("https://drive.google.com/file/d/1nfJ0k1ErSj7KqhOWDk0UeAjmRK1D4ab9/view?usp=sharing");
 }
 
-// Resume
+
+
+// // Resume
 // document.getElementById('resume-link-1').addEventListener("click",()=>{
 //     window.location.assign("https://drive.google.com/file/d/1nfJ0k1ErSj7KqhOWDk0UeAjmRK1D4ab9/view?usp=sharing", "_blank");
 //   })
@@ -209,3 +212,4 @@ document.getElementById("resume-button-2").onclick = () => {
 //   document.getElementById('resume-link-2').addEventListener("click",()=>{
 //     window.location.assign("https://drive.google.com/file/d/1nfJ0k1ErSj7KqhOWDk0UeAjmRK1D4ab9/view?usp=sharing", "_blank");
 //   })
+
