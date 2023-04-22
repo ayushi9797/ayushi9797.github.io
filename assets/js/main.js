@@ -99,7 +99,10 @@ let swiperPortfolio = new Swiper('.swiper-container', {
     cssMode: true,
 
     loop: true,
-
+    autoplay: {
+        delay: 5000,
+      },
+    
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -108,7 +111,7 @@ let swiperPortfolio = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
         clickable: true,
     },
-    // mousewheel: true,
+    mousewheel: true,
     keyboard: true,
 });
 
@@ -209,7 +212,6 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-
 
 // resume btns fucntion
 
