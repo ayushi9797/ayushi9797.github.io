@@ -744,15 +744,15 @@ img {
     width: 50%;
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(92, 228, 28, 0), rgba(38, 161, 0, 0.75), rgba(84, 212, 25, 0));
+    background-image: linear-gradient(to right, rgba(92, 228, 28, 0), rgba(215, 75, 124, 0.75), rgba(84, 212, 25, 0));
     margin :10rem auto 5rem auto;
 }
 .dukin-hrr{
     width: 80%;
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(92, 228, 28, 0), rgba(38, 161, 0, 0.75), rgba(84, 212, 25, 0));
-    margin :10rem auto auto auto;
+    background-image: linear-gradient(to right, rgba(92, 228, 28, 0), rgba(215, 75, 124, 0.75), rgba(84, 212, 25, 0));
+    margin :5% auto 5% auto;
 }
 
 .portfolio__content {
@@ -1481,3 +1481,6 @@ img {
     position: absolute;
     opacity: 0;
 }
+
+/* techstack icon and div */
+
